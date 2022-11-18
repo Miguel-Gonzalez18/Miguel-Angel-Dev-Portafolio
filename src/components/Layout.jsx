@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Outlet } from 'react-router-dom'
 import { BiHomeHeart } from "react-icons/bi";
 import { AiFillProject } from "react-icons/ai";
@@ -9,6 +9,18 @@ import logo from '../img/logo.jpg'
 import '../../src/index.css'
 
 function Layout() {
+  const [screenSize, setScreenSize] = useState()
+  const size = screen.width
+
+  useEffect(()=>{
+    if(size <= 768) {
+      setScreenSize(24)
+    }
+    else{
+      setScreenSize(20)
+    }
+  },[])
+
   return (
     <>
       <header className='p-2 w-full flex md:justify-between justify-center cabecera'>
@@ -18,11 +30,11 @@ function Layout() {
         </div>
         <nav>
           <ul className='md:flex flex left-0 justify-evenly bottom-0 font-texto fixed md:relative bg-colorBlanco w-full z-10'>
-            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><BiHomeHeart className='mr-1' size={20} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Home</p></a></li>
-            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><AiFillProject className='mr-1' size={20} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Proyects</p></a></li>
-            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><MdDesignServices className='mr-1' size={20} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Services</p></a></li>
-            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><BsEmojiSunglassesFill className='mr-1' size={20} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>About me</p></a></li>
-            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><MdContacts className='mr-1' size={20} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Contact</p></a></li>
+            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><BiHomeHeart className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Home</p></a></li>
+            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><AiFillProject className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Proyects</p></a></li>
+            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><MdDesignServices className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Services</p></a></li>
+            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><BsEmojiSunglassesFill className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>About me</p></a></li>
+            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><MdContacts className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Contact</p></a></li>
           </ul>
         </nav>
       </header>
