@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.cabecera{
-    border-bottom: .5px solid rgb(0, 0, 0, .15)
+body::-webkit-scrollbar{
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+    background: #6C63FF;
+    border-radius: 10px;
 }

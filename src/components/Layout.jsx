@@ -23,20 +23,22 @@ function Layout() {
 
   return (
     <>
-      <header className='p-2 w-full flex md:justify-between justify-center cabecera'>
-        <div className='flex items-center'>
-          <img className='w-10 rounded-full border-2 border-primary' src={logo} alt="Logo de la pagina"/>
-          <h1 className='font-title ml-2'>Miguel Ángel <span className='text-primary'>Dev</span></h1>
+      <header className='fixed w-full z-10 bg-colorBlanco shadow-sm'>
+        <div className='p-1 w-full flex md:justify-between justify-center'>
+          <div className='flex items-center px-1'>
+            <img className='w-10 rounded-full border-2 border-primary' src={logo} alt="Logo de la pagina"/>
+            <h1 className='font-title ml-2'>Miguel Ángel <span className='text-primary'>Dev</span></h1>
+          </div>
+          <nav>
+            <ul className='md:flex flex left-0 justify-evenly bottom-0 font-texto fixed md:relative bg-colorBlanco w-full z-10'>
+              <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><BiHomeHeart className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Inicio</p></a></li>
+              <li className='m-3'><a href="#proyect" className='hover:text-colorBlack flex items-center text-colorGray'><AiFillProject className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Proyectos</p></a></li>
+              <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><MdDesignServices className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Servicios</p></a></li>
+              <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><BsEmojiSunglassesFill className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Sobre mi</p></a></li>
+              <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><MdContacts className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Contactos</p></a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul className='md:flex flex left-0 justify-evenly bottom-0 font-texto fixed md:relative bg-colorBlanco w-full z-10'>
-            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><BiHomeHeart className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Home</p></a></li>
-            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><AiFillProject className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Proyects</p></a></li>
-            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><MdDesignServices className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Services</p></a></li>
-            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><BsEmojiSunglassesFill className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>About me</p></a></li>
-            <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><MdContacts className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Contact</p></a></li>
-          </ul>
-        </nav>
       </header>
 
       <main>
