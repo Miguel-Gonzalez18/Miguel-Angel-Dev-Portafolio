@@ -31,9 +31,9 @@ function Layout() {
           </div>
           <nav>
             <ul className='md:flex flex left-0 justify-evenly bottom-0 font-texto fixed md:relative bg-colorBlanco w-full z-10'>
-              <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><BiHomeHeart className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Inicio</p></a></li>
+              <li className='m-3'><a href="#inicio" className='hover:text-colorBlack flex items-center text-colorGray'><BiHomeHeart className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Inicio</p></a></li>
               <li className='m-3'><a href="#proyect" className='hover:text-colorBlack flex items-center text-colorGray'><AiFillProject className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Proyectos</p></a></li>
-              <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><MdDesignServices className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Servicios</p></a></li>
+              <li className='m-3'><a href="#serices" className='hover:text-colorBlack flex items-center text-colorGray'><MdDesignServices className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Servicios</p></a></li>
               <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><BsEmojiSunglassesFill className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Sobre mi</p></a></li>
               <li className='m-3'><a href="#" className='hover:text-colorBlack flex items-center text-colorGray'><MdContacts className='mr-1' size={screenSize} color="rgb(0, 0, 0, .50)" /><p className='hidden md:block'>Contactos</p></a></li>
             </ul>

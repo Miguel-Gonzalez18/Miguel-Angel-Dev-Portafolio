@@ -17,7 +17,11 @@ module.exports = {
       colorGray: "rgb(0, 0, 0, .50)",
       colorGray2: "rgb(0, 0, 0, .70)",
       colorBlack: "rgb(0, 0, 0)",
-      colorBlanco: "#fff"
+      colorBlanco: "#fff",
+      colorRojo: "#F24E1E",
+      colorMorado: "#6C63FF",
+      colorVerder: "#0ACF83",
+      colorAmarillo: "#F7DF1E"
     }
   },
   plugins: [],

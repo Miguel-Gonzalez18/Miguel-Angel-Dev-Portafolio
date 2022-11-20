@@ -8,6 +8,7 @@ import logoFigma from '../img/logos_figmaimg.png'
 import logoReact from '../img/vscode-icons_file-type-reactjsimg.png'
 //importar componentes, las sesiones
 import Proyects from './Proyects';
+import Services from './Services';
 // componente de inicio
 function Inicio() {
     return (
@@ -43,6 +44,7 @@ function Inicio() {
             </div>
 
             <Proyects />
+            <Services />
         </>
     )
 }
