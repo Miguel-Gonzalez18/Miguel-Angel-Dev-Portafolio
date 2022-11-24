@@ -19,7 +19,7 @@ function Services() {
             {/* cards de servicios */}
             <div className='md:flex justify-center gap-3 mt-10'>
             {/* cards 1 */}
-                <div data-aos="fade-up" data-aos-duration="2000" className='md:w-80 w-full h-auto p-3 shadow-lg rounded-md md:relative md:top-24 border-t-colorRojo border-t-4 md:mb-0 mb-5'>
+                <div data-aos="fade-up" data-aos-duration="2000" className='md:w-80 w-full h-auto p-3 shadow-lg rounded-md md:relative md:top-24 border-t-colorRojo border-t-4 md:mb-0 mb-5 bg-colorBlanco'>
                     <h3 className='font-textos font-medium'>Crear y probar aplicaciones y sitios web</h3>
                     <p className='font-textos text-sm mt-2'>
                         Un sitio web es una muy buena opción para presentar a los clientes nuevos servicios, informar sobre nuevos productos, anunciar eventos y promociones especiales.
@@ -30,7 +30,7 @@ function Services() {
                     </div>
                 </div>
             {/* cards 2 */}
-                <div data-aos="fade-up" data-aos-duration="1000" className='md:w-80 w-full h-auto p-3 shadow-lg rounded-md border-t-colorMorado border-t-4 md:mb-0 mb-5'>
+                <div data-aos="fade-up" data-aos-duration="1000" className='md:w-80 w-full h-auto p-3 shadow-lg rounded-md border-t-colorMorado border-t-4 md:mb-0 mb-5 bg-colorBlanco'>
                     <h3 className='font-textos font-medium'>Mantener y actualizar el sitios web</h3>
                     <p className='font-textos text-sm mt-2'>
                         La actualización y el mantenimiento de un sitio web proporcionará un diseño actual y adaptado a las últimas tendencias como tambien engloba las acciones correctivas para detectar errores mejorar la usabilidad y performance.
@@ -40,7 +40,7 @@ function Services() {
                     </div>
                 </div>
             {/* cards 3 */}
-                <div data-aos="fade-up" data-aos-duration="3000" className='md:w-80 w-full h-auto p-3 shadow-lg rounded-md md:relative md:top-24 border-t-colorAmarillo border-t-4'>
+                <div data-aos="fade-up" data-aos-duration="3000" className='md:w-80 w-full h-auto p-3 shadow-lg rounded-md md:relative md:top-24 border-t-colorAmarillo border-t-4 bg-colorBlanco'>
                     <h3 className='font-textos font-medium'>Hacer prototipos del sitio web</h3>
                     <p className='font-textos text-sm mt-2 mb-2'>
                         Crear un prototipo te permite ver una referencia visual de la estructura o idea de cómo será la página web, definiendo al detalle el contenido y su distribución visual, organizando así la información a nivel del sitio
@@ -52,7 +52,7 @@ function Services() {
             </div>
             {/* cards 4 */}
             <div className='md:flex justify-center mt-5'>
-                <div data-aos="fade-up" data-aos-duration="4000" className=' md:w-80 w-full h-auto p-3 shadow-lg rounded-md border-t-colorVerder border-t-4'>
+                <div data-aos="fade-up" data-aos-duration="4000" className=' md:w-80 w-full h-auto p-3 shadow-lg rounded-md border-t-colorVerder border-t-4 bg-colorBlanco'>
                     <h3 className='font-textos font-medium'>Página web Wordpress</h3>
                     <p className='font-textos text-sm mt-2 mb-2'>
                         WordPress tambien llamado sistema de gestión de contenidos web, una buena opción para crear un sitio web peronal o blog, tienda virtual sin necesidad de conocer código de programaión

@@ -16,6 +16,7 @@ module.exports = {
       bgFigurasCuadrado: 'rgb(10, 207, 131, .30)',
       colorGray: "rgb(0, 0, 0, .50)",
       colorGray2: "rgb(0, 0, 0, .70)",
+      colorGray3: "rgb(250, 250, 250)",
       colorBlack: "rgb(0, 0, 0)",
       colorBlanco: "#fff",
       colorRojo: "#F24E1E",

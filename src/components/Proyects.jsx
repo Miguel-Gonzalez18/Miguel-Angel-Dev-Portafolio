@@ -24,7 +24,7 @@ function Proyects() {
             {/* Todos los proyectos */}
             <div className='grid md:grid-cols-3 md:gap-5'>
                 {/* Proyecto 1 */}
-                <div className='p-2 shadow-md rounded-lg mt-5 border-b-4 border-b-primary' data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div className='p-2 bg-colorBlanco shadow-md rounded-lg mt-5 border-b-4 border-b-primary' data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div className='w-full'>
                         <img src={imgProyecto1} alt="Imagen del proyecto1" className='object-fill rounded-lg' />
                     </div>
@@ -42,7 +42,7 @@ function Proyects() {
                     </div>
                 </div>
                 {/* Proyecto 2 */}
-                <div className='p-2 shadow-md rounded-lg mt-5 border-b-4 border-b-primary' data-aos="fade-up" data-aos-duration="3000">
+                <div className='p-2 bg-colorBlanco shadow-md rounded-lg mt-5 border-b-4 border-b-primary' data-aos="fade-up" data-aos-duration="3000">
                     <div className='w-full'>
                         <img src={imgProyecto2} alt="Imagen del proyecto1" className='object-fill rounded-lg' />
                     </div>
@@ -60,7 +60,7 @@ function Proyects() {
                     </div>
                 </div>
                 {/* Proyecto 3 */}
-                <div className='p-2 shadow-md rounded-lg mt-5 border-b-4 border-b-primary' data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <div className='p-2 bg-colorBlanco shadow-md rounded-lg mt-5 border-b-4 border-b-primary' data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <div className='w-full'>
                         <img src={imgProyecto3} alt="Imagen del proyecto1" className='object-fill rounded-lg' />
                     </div>
