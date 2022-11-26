@@ -7,7 +7,7 @@ import imgWordpress from '../img/wordpress.png'
 
 function Services() {
     return (
-        <div className='p-5 md:p-10' id='serices'>
+        <div className='p-5 md:p-10 mt-10' id='serices'>
             <h2 className='font-textos text-2xl text-center'>Servicios</h2>
             {/* Los puntos debajo del titulo */}
             <div className='text-center'>
@@ -20,7 +20,7 @@ function Services() {
             <div className='md:flex justify-center gap-3 mt-10'>
             {/* cards 1 */}
                 <div data-aos="fade-up" data-aos-duration="2000" className='md:w-80 w-full h-auto p-3 shadow-lg rounded-md md:relative md:top-24 border-t-colorRojo border-t-4 md:mb-0 mb-5 bg-colorBlanco'>
-                    <h3 className='font-textos font-medium'>Crear y probar aplicaciones y sitios web</h3>
+                    <h3 className='font-textos font-medium'>Crear aplicaciones web y sitios web</h3>
                     <p className='font-textos text-sm mt-2'>
                         Un sitio web es una muy buena opción para presentar a los clientes nuevos servicios, informar sobre nuevos productos, anunciar eventos y promociones especiales.
                         Cuando una institución cuenta con una página web eleva su prestigio

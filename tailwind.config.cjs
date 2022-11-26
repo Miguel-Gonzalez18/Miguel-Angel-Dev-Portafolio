@@ -22,7 +22,8 @@ module.exports = {
       colorRojo: "#F24E1E",
       colorMorado: "#6C63FF",
       colorVerder: "#0ACF83",
-      colorAmarillo: "#F7DF1E"
+      colorAmarillo: "#F7DF1E",
+      colorLinkedin: "#0a66c2",
     }
   },
   plugins: [],

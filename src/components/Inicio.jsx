@@ -9,11 +9,13 @@ import logoReact from '../img/vscode-icons_file-type-reactjsimg.png'
 //importar componentes, las sesiones
 import Proyects from './Proyects';
 import Services from './Services';
+import SobreMi from './SobreMi';
+import Habilidades from './Habilidades';
 // componente de inicio
 function Inicio() {
     return (
         <>
-            <div className='w-full h-screen grid md:grid-cols-5 grid-cols-1 pt-5' id='inicio'>
+            <div className='w-full h-screen grid md:grid-cols-5 grid-cols-1 pt-10' id='inicio'>
                 {/* imagen principal, logo de figma y react js animados */}
                 <div className='grid place-content-center md:col-span-2 relative order-2 md:order-1'>
                     <img src={imgHero} alt="hero" className='md:w-96 w-72'/>
@@ -45,6 +47,7 @@ function Inicio() {
 
             <Proyects />
             <Services />
+            <SobreMi />
         </>
     )
 }
