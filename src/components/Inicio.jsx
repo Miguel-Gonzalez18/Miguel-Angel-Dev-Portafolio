@@ -48,6 +48,7 @@ function Inicio() {
             <Proyects />
             <Services />
             <SobreMi />
+            <Habilidades />
         </>
     )
 }

@@ -17,6 +17,7 @@ module.exports = {
       colorGray: "rgb(0, 0, 0, .50)",
       colorGray2: "rgb(0, 0, 0, .70)",
       colorGray3: "rgb(250, 250, 250)",
+      colorGray4: "#AAAAAA",
       colorBlack: "rgb(0, 0, 0)",
       colorBlanco: "#fff",
       colorRojo: "#F24E1E",

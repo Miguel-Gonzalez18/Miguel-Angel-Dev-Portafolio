@@ -6,7 +6,7 @@ import { BsInstagram } from "react-icons/bs";
 
 function SobreMi() {
     return (
-        <div className='md:max-w-3xl mx-auto my-16' id='serices' data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1000" data-aos-offset="0">
+        <div className='md:max-w-3xl mx-auto mt-16' id='sobreMi' data-aos="fade-up" data-aos-duration="1000">
             <h2 className='font-textos text-2xl text-center'>Sobre mi</h2>
              {/* Los puntos debajo del titulo */}
             <div className='text-center'>
@@ -31,8 +31,10 @@ function SobreMi() {
 
                 <div className='md:order-2 order-1'>
                     <div className="bg-[url('/src/img/ImgPerfil.jpg')] w-48 h-48 bg-no-repeat bg-center bg-cover stylesImgPerfil md:m-5 m-auto">
-
+                        {/* Foto de perfil */}
                     </div>
+
+                    {/* Botones de redes sociales */}
                     <div className='flex justify-center gap-1 my-7'>
                         <div className='bg-colorLinkedin w-10 h-10 rounded-md flex justify-center items-center'>
                             <a href="https://www.linkedin.com/in/miguel%C3%A1ngelgonz%C3%A1lez770459219/" target="_blank">
