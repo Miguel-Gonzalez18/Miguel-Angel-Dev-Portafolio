@@ -11,6 +11,7 @@ import Proyects from './Proyects';
 import Services from './Services';
 import SobreMi from './SobreMi';
 import Habilidades from './Habilidades';
+import Contacto from './Contacto';
 // componente de inicio
 function Inicio() {
     return (
@@ -49,6 +50,7 @@ function Inicio() {
             <Services />
             <SobreMi />
             <Habilidades />
+            <Contacto />
         </>
     )
 }
