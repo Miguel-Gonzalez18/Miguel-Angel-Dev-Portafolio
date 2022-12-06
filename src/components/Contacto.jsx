@@ -42,7 +42,9 @@ function Contacto() {
                 setInterval(() => {
                     setSuccess(false)
                 }, 10000);
-
+                setNombre("")
+                setEmail("")
+                setMensaje("")
             }, (error) => {
                 setError(true)
                 setMessage(error.text)
