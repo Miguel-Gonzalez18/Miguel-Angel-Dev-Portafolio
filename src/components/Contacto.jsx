@@ -1,5 +1,7 @@
-import React from 'react'
-import { useActionData, Form } from 'react-router-dom'; 
+import React, {useState, useRef} from 'react'
+import emailjs from 'emailjs-com'
+import { Toast } from './Toast';
+import ToastError from './ToastError';
 //iconos
 import { MdMarkEmailUnread } from "react-icons/md";
 import { BsLinkedin, BsFillHeartFill } from "react-icons/bs";
@@ -8,11 +10,65 @@ import { BsInstagram } from "react-icons/bs";
 import { IoIosSend } from "react-icons/io";
 
 function Contacto() {
+    const form = useRef();
+    const [nombre, setNombre] = useState("")
+    const [email, setEmail] = useState("")
+    const [mensaje, setMensaje] = useState("")
+    const [success, setSuccess] = useState(false)
+    const [error, setError] = useState(false)
+    const [message, setMessage] = useState("")
+    
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const datos = {
+            from_name: nombre,
+            to_name: "Miguel Ángel",
+            email,
+            mensaje
+        }
+        if(Object.values(datos).includes("")){
+            console.log("Todos los campos son obligatorios")
+            setMessage("Todos los campos son obligatorios")
+            setError(true)
+                setInterval(() => {
+                    setError(false)
+                }, 10000);
+            return
+        }
+        emailjs.send('service_1z63cd4', 'template_74c32jr', datos, 'S0Px29_e2r29t7zxZ')
+            .then((result) => {
+                console.log(result.text);
+                setSuccess(true)
+                setInterval(() => {
+                    setSuccess(false)
+                }, 10000);
+
+            }, (error) => {
+                setError(true)
+                setMessage(error.text)
+                setInterval(() => {
+                    setError(false)
+                }, 6000);
+            });
+    }
     // Obtener fecha actual
     const fecha = new Date()
     const year = fecha.getFullYear()
+
     return (
         <footer>
+            {
+                success && (
+                    <Toast/>
+                    )
+            }
+            {
+                error && (
+                    <ToastError>
+                        {message}
+                    </ToastError>
+                    )
+            }
             <div className='bg-colorAzul py-10 md:px-28 px-3 w-full'>
                 <h2 className='font-textos text-2xl text-colorBlanco'>Contacto</h2>
                 <div className='mt-5 md:flex w-full'>
@@ -35,20 +91,20 @@ function Contacto() {
                         </div>
                     </div>
                     <div className='w-full text-center'>
-                        <Form method='post' noValidate >
+                        <form onSubmit={handleSubmit} ref={form}>
                             <div className='md:flex justify-center gap-x-5'>
-                                <input type="text" name="nombre" placeholder='Nombre' autoComplete='off' className='p-2 rounded-lg font-textos w-full outline-none inputStyle'/>
-                                <input type="email" name="email" placeholder='Correo' autoComplete='off' className='md:mt-0 mt-5 p-2 rounded-lg font-textos w-full outline-none inputStyle'/>
+                                <input value={nombre} onChange={(text) => setNombre(text.target.value)} type="text" name="nombre" placeholder='Nombre' autoComplete='off' className='p-2 rounded-lg font-textos w-full outline-none inputStyle'/>
+                                <input value={email} onChange={(text) => setEmail(text.target.value)} type="email" name="email" placeholder='Correo' autoComplete='off' className='md:mt-0 mt-5 p-2 rounded-lg font-textos w-full outline-none inputStyle'/>
                             </div>
                             <div className='mt-5'>
-                                <textarea name="mensaje" className='w-full h-40 font-textos rounded-lg p-2 outline-none inputStyle' placeholder='Escribe tu mensaje'></textarea>
+                                <textarea value={mensaje} onChange={(text) => setMensaje(text.target.value)} name="mensaje" className='w-full h-40 font-textos rounded-lg p-2 outline-none inputStyle' placeholder='Escribe tu mensaje'></textarea>
                             </div>
                             <div className='flex justify-end mt-5'>
                                 <button type='submit' className='font-textos text-colorBlanco px-7 py-2 bg-colorVerder2 rounded-lg shadow-md flex hover:bg-colorVerder3'>
                                     Enviar <IoIosSend size={24} color="#FFFFFF" className='ml-2'/>
                                 </button>
                             </div>
-                        </Form>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -29,7 +29,9 @@ module.exports = {
       colorAzulTransparente: "rgb(21, 114, 182, .50)",
       colorVerder2: "#0ACF83",
       colorVerder3: "#09B673",
-      colorAzulOscuro: "#135D93"
+      colorAzulOscuro: "#135D93",
+      colorRojoClaro: "#F5B7B1",
+      colorRojoClaro2: "#EF5350"
     }
   },
   plugins: [],
